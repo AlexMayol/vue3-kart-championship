@@ -1,0 +1,10 @@
+html, body {
+    height: 100%;
+    @apply text-gray-700;
+}
+
+/*! @import */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
