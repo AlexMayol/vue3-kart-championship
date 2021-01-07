@@ -1,9 +1,9 @@
 <template>
   <div
-    class="p-2 transition border border-gray-300 rounded cursor-pointer hover:bg-pink-100"
+    class="p-2 transition border rounded cursor-pointer "
   >
     <div class="flex justify-center w-full">
-      <img class="rounded-full" :src="pilot.picture" alt="" />
+     <Avatar :src="pilot.picture" />
     </div>
     <h1 class="text-lg font-bold text-center">{{ pilot.name }}</h1>
     <p>{{ pilot.age }}</p>
@@ -13,7 +13,8 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
-// import { Pilot } from "@/interfaces";
+
+import Avatar from "@/components/Pilots/Avatar.vue";
 export default defineComponent({
   props: {
     pilot: {
@@ -22,5 +23,8 @@ export default defineComponent({
     },
   },
   name: "PilotCard",
+  components:{
+    Avatar
+  }
 });
 </script>

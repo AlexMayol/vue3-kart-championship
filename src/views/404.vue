@@ -6,3 +6,16 @@
     </div>
   </router-link>
 </template>
+
+<script>
+// import {useRanking} from '@/hooks/useRanking'
+export default {
+  setup(){
+
+    // console.log(useRanking())
+
+   
+
+  }
+}
+</script>

@@ -1,39 +1,30 @@
 <template>
-  
   <p>home</p>
- 
-  <div class="grid grid-cols-4 gap-8 bg-red-200 home" >
 
-<!-- 
-    <div v-for="pilot of pilots" :key="pilot._id" >
-      <router-link :to="'/pilot/'+formatName(pilot.name)">{{pilot.name}}</router-link>
-    </div> -->
-
-    <!-- <PilotList /> -->
+  <div v-for="x of data" :key="x.pilotId">
+    <Card :pilot="useFindPilotById(x.pilotId)" />
+    {{x.pilotId}}  tiene {{x.points}} points y ha ganado {{x.victories}} carreras
   </div>
 </template>
 
 <script lang="ts">
-import { defineComponent, ref, computed, watch } from "vue";
+import { defineComponent } from "vue";
 
-import PilotList from "@/components/Pilots/PilotList.vue";
+import Card from "@/components/Pilots/Card.vue";
 
-import { Pilot } from "@/interfaces";
-import { useData } from "@/hooks/useData.ts";
+// import { Pilot } from "@/interfaces";
+import { useRanking } from "@/hooks/useRanking";
+import { useFindPilotById } from "@/hooks/useFindPilot";
 
 export default defineComponent({
   name: "Home",
-  // setup() {
-  //   console.log( useData());
-  //   // const pilots: Pilot[] = useData();
+  setup() {
+    const data = useRanking();
 
-  //   const formatName = (name: string) => {
-  //     return name.trim().toLowerCase().replace(" ", "-");
-  //   };
-  //   return { pilots, formatName };
-  // },
+    return { data, useFindPilotById };
+  },
   components: {
-    // PilotList,
+    Card,
   },
 });
 </script>

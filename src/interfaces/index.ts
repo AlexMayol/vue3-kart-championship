@@ -5,29 +5,18 @@ export interface Pilot {
     team: string;
     name: string;
 }
-
-export interface RaceResult {
+export interface PilotPosition {
+    pilotId: string;
     time: string;
-    position: number;
 }
-
-
-export interface PilotInRace{
-    pilot: Pilot;
-    result: RaceResult;
-}
-
 
 export interface Leaderboard {
-    race: string;
-    result: {
-        pilotId: string;
-        time: string;
-        postition: number;
-    }[];
+    raceName: string;
+    result: PilotPosition[];
 }
 
-export interface Race {
-    name: string;
-    pilots: PilotInRace[];
+export interface Ranking {
+    pilotId: string;
+    points: number;
+    victories: number;
 }

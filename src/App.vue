@@ -1,6 +1,8 @@
 <template>
   <main class="h-full grid-cols-8 md:grid">
-    <nav class="flex flex-col col-span-2 p-2 bg-pink-600">
+
+    <nav class="flex flex-col col-span-2 bg-pink-600">
+    <div class="sticky top-0 px-2 my-2">
       <router-link to="/">
          <MenuLink>
           <h2>
@@ -24,6 +26,8 @@
           </h2>
         </MenuLink>
       </router-link>
+
+    </div>
     </nav>
 
     <div class="col-span-6 p-4">

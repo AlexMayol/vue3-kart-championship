@@ -1,7 +1,7 @@
-export const data = [
+export const initialData = [
   {
     _id: '5f3a3c5faa55d5c4ea549ac1',
-    picture: 'https://i.pravatar.cc/64',
+    picture: 'https://placeimg.com/128/128/any',
     age: 38,
     name: 'Padilla Adkins',
     team: 'EURON',
@@ -50,7 +50,7 @@ export const data = [
   },
   {
     _id: '5f3a3c5f4984bd9be6a6f655',
-    picture: 'https://i.pravatar.cc/64',
+    picture: 'https://placeimg.com/128/129/any',
     age: 39,
     name: 'Richards Floyd',
     team: 'VENDBLEND',
@@ -99,7 +99,7 @@ export const data = [
   },
   {
     _id: '5f3a3c5fc4c1a2c2dd9df702',
-    picture: 'https://i.pravatar.cc/64',
+    picture: 'https://placeimg.com/128/130/any',
     age: 39,
     name: 'Jewel Mcdaniel',
     team: 'GENESYNK',
@@ -148,7 +148,7 @@ export const data = [
   },
   {
     _id: '5f3a3c5f8a23c3e2c85cab74',
-    picture: 'https://i.pravatar.cc/64',
+    picture: 'https://placeimg.com/128/131/any',
     age: 21,
     name: 'Welch Mays',
     team: 'UXMOX',
@@ -197,7 +197,7 @@ export const data = [
   },
   {
     _id: '5f3a3c5f355a5be1fb74076a',
-    picture: 'https://i.pravatar.cc/64',
+    picture: 'https://placeimg.com/128/132/any',
     age: 28,
     name: 'Lilian Levine',
     team: 'UXMOX',
@@ -246,7 +246,7 @@ export const data = [
   },
   {
     _id: '5f3a3c5fc42b87fc0d6e31a9',
-    picture: 'https://i.pravatar.cc/64',
+    picture: 'https://placeimg.com/128/133/any',
     age: 27,
     name: 'Harmon Mills',
     team: 'GENESYNK',
@@ -295,7 +295,7 @@ export const data = [
   },
   {
     _id: '5f3a3c5f86cbcda872a8f1ed',
-    picture: 'https://i.pravatar.cc/64',
+    picture: 'https://placeimg.com/128/134/any',
     age: 24,
     name: 'Olsen Donaldson',
     team: 'DEVAWAY',
@@ -344,7 +344,7 @@ export const data = [
   },
   {
     _id: '5f3a3c5f65e328c1a1263781',
-    picture: 'https://i.pravatar.cc/64',
+    picture: 'https://placeimg.com/128/135/any',
     age: 29,
     name: 'Anne Johnston',
     team: 'DEVAWAY',
@@ -393,7 +393,7 @@ export const data = [
   },
   {
     _id: '5f3a3c5fde8d2bb91cab3352',
-    picture: 'https://i.pravatar.cc/64',
+    picture: 'https://placeimg.com/128/136/any',
     age: 31,
     name: 'Cherie Fitzgerald',
     team: 'EURON',
@@ -442,7 +442,7 @@ export const data = [
   },
   {
     _id: '5f3a3c5f5a4ce67633e028ad',
-    picture: 'https://i.pravatar.cc/64',
+    picture: 'https://placeimg.com/128/137/any',
     age: 29,
     name: 'Debora Sears',
     team: 'GENESYNK',
@@ -491,7 +491,7 @@ export const data = [
   },
   {
     _id: '5f3a3c5f0e202f4a527bf502',
-    picture: 'https://i.pravatar.cc/64',
+    picture: 'https://placeimg.com/128/138/any',
     age: 27,
     name: 'Morris Combs',
     team: 'EURON',
@@ -540,7 +540,7 @@ export const data = [
   },
   {
     _id: '5f3a3c5ff1c5e552442b292d',
-    picture: 'https://i.pravatar.cc/64',
+    picture: 'https://placeimg.com/128/139/any',
     age: 29,
     name: 'Naomi Rutledge',
     team: 'VENDBLEND',
@@ -589,7 +589,7 @@ export const data = [
   },
   {
     _id: '5f3a3c5f086b43d06ac5a984',
-    picture: 'https://i.pravatar.cc/64',
+    picture: 'https://placeimg.com/128/140/any',
     age: 35,
     name: 'Guerra Rosario',
     team: 'DEVAWAY',
@@ -638,7 +638,7 @@ export const data = [
   },
   {
     _id: '5f3a3c5f2744fa89349fe0f3',
-    picture: 'https://i.pravatar.cc/64',
+    picture: 'https://placeimg.com/128/141/any',
     age: 34,
     name: 'Nguyen Fletcher',
     team: 'GENESYNK',
@@ -687,7 +687,7 @@ export const data = [
   },
   {
     _id: '5f3a3c5f970bc40e21b8ee63',
-    picture: 'https://i.pravatar.cc/64',
+    picture: 'https://placeimg.com/128/142/any',
     age: 27,
     name: 'Lisa Montoya',
     team: 'GENESYNK',
@@ -736,7 +736,7 @@ export const data = [
   },
   {
     _id: '5f3a3c5f0a5f78c603fc1d14',
-    picture: 'https://i.pravatar.cc/64',
+    picture: 'https://placeimg.com/128/143/any',
     age: 30,
     name: 'Misty Marsh',
     team: 'UXMOX',
@@ -785,7 +785,7 @@ export const data = [
   },
   {
     _id: '5f3a3c5f876488cda4de309a',
-    picture: 'https://i.pravatar.cc/64',
+    picture: 'https://placeimg.com/128/144/any',
     age: 32,
     name: 'Stanton Ayala',
     team: 'CONFRENZY',
@@ -834,7 +834,7 @@ export const data = [
   },
   {
     _id: '5f3a3c5f8bd0087dc1b70b77',
-    picture: 'https://i.pravatar.cc/64',
+    picture: 'https://placeimg.com/128/145/any',
     age: 39,
     name: 'Gilda Lindsay',
     team: 'UXMOX',
@@ -883,7 +883,7 @@ export const data = [
   },
   {
     _id: '5f3a3c5f8df3fe2e8c6ae477',
-    picture: 'https://i.pravatar.cc/64',
+    picture: 'https://placeimg.com/128/146/any',
     age: 29,
     name: 'Daniels Manning',
     team: 'CONFRENZY',
@@ -932,7 +932,7 @@ export const data = [
   },
   {
     _id: '5f3a3c5f0c713e786503e798',
-    picture: 'https://i.pravatar.cc/64',
+    picture: 'https://placeimg.com/128/147/any',
     age: 39,
     name: 'Howe Gaines',
     team: 'VENDBLEND',
@@ -981,7 +981,7 @@ export const data = [
   },
   {
     _id: '5f3a3c5f37ce779261434517',
-    picture: 'https://i.pravatar.cc/64',
+    picture: 'https://placeimg.com/128/148/any',
     age: 24,
     name: 'Hillary Leonard',
     team: 'CONFRENZY',
@@ -1030,7 +1030,7 @@ export const data = [
   },
   {
     _id: '5f3a3c5fdc6f6738e4f35dd7',
-    picture: 'https://i.pravatar.cc/64',
+    picture: 'https://placeimg.com/128/149/any',
     age: 32,
     name: 'Reva French',
     team: 'GENESYNK',

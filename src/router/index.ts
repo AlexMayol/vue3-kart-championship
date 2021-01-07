@@ -20,12 +20,13 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/leaderboard',
     name: 'Leaderboard',
-    component: () => import(/* webpackChunkName: "leaderboard" */ '../views/Leaderboard.vue')
+    component: () => import(/* webpackChunkName: "leaderboards" */ '../views/Leaderboards.vue')
   },
-  { path: '/:pathMatch(.*)*',
-  name: 'Page not found',
-  component: () => import(/* webpackChunkName: "404" */ '../views/404.vue')   
-},  
+  {
+    path: '/:pathMatch(.*)*',
+    name: 'Page not found',
+    component: () => import(/* webpackChunkName: "404" */ '../views/404.vue')
+  },
 
 ]
 

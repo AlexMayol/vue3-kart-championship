@@ -1,34 +1,39 @@
 <template>
   <section class="grid gap-4 sm:grid-cols-2 md:grid-cols-3">
-    <div v-for="pilot of pilots" :key="pilot._id" class="transition transform shadow hover:-translate-y-1 hover:shadow-sm">
-      <router-link :to="'/pilots/' + pilotNameToURL(pilot.name)">
-        <PilotCard :pilot="pilot" />
+    <div
+      v-for="pilot of pilots"
+      :key="pilot._id"
+      class="transition transform hover:-translate-y-1"
+    >
+      <router-link :to="getPilotUrl(pilot.name)">
+        <Card :pilot="pilot" />
       </router-link>
     </div>
   </section>
 </template>
 
-<script>
+<script lang="ts">
 import { defineComponent } from "vue";
 
-import { usePilotList } from "@/hooks/usePilotList";
+import { usePilotList } from "@/hooks";
 
 import { pilotNameToURL } from "@/helpers";
 
-import PilotCard from "@/components/Pilots/PilotCard";
+import Card from "@/components/Pilots/Card.vue";
 
 export default defineComponent({
-  name: "Pilots",
+  name: "PilotsView",
   setup() {
-    const { pilots } = usePilotList();
+    const pilots = usePilotList();
 
-    return { pilots, pilotNameToURL };
+    const getPilotUrl = (name: string) => {
+      return `/pilots/${pilotNameToURL(name)}`;
+    };
+
+    return { pilots, getPilotUrl };
   },
   components: {
-    PilotCard,
+    Card,
   },
 });
 </script>
-
-<style>
-</style>
