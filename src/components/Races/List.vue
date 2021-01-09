@@ -1,5 +1,5 @@
 <template>
-  <section class="grid grid-cols-3 gap-8">
+  <section class="grid gap-8 sm:grid-cols-2 md:grid-cols-3">
 
       <div v-for="race of races" :key="race.raceName">
           <router-link :to="'/races/'+nameToURL(race.raceName)">

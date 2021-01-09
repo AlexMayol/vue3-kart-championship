@@ -1,7 +1,7 @@
 <template>
   <section>
     <h1 class="mb-4 text-2xl font-bold text-center">Current Leaderboard</h1>
-    <section class="grid grid-cols-2 gap-4">
+    <section class="grid gap-4 sm:grid-cols-2">
       <div v-for="x of data" :key="x.pilotId">
         <router-link
           :to="'/pilots/' + nameToURL(useFindPilotById(x.pilotId).name)"

@@ -4,7 +4,7 @@
       :to="'/pilots/' + nameToURL(position.pilot.name)"
       v-for="(position, index) of pilotRanking"
       :key="position.pilot._id"
-      class="flex items-center p-2 space-x-2 transition bg-blue-200 rounded hover:bg-blue-400"
+      class="flex flex-wrap items-center p-2 space-x-2 transition bg-blue-200 rounded hover:bg-blue-400"
     >
       <div>
         <Avatar :src="position.pilot.picture" />

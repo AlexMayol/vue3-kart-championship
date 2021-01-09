@@ -2,7 +2,7 @@
   <section v-if="pilot" class="home">
     <Card :pilot="pilot" />
 
-    <div class="grid grid-cols-2 gap-4 my-4 md:grid-cols-3">
+    <div class="grid gap-4 my-4 sm:grid-cols-2 md:grid-cols-3">
       <div v-for="race of races" :key="race.name">
         <PilotRaceResult :result="race" />
       </div>

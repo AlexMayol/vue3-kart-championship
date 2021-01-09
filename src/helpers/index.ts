@@ -1,7 +1,8 @@
+import { popScopeId } from "vue";
+
 export const nameToURL = (name: string) => {
     return name.trim().toLocaleLowerCase().replace(' ', '-');
 }
-
 
 export const addPositionSufix = (position: number) => {
 

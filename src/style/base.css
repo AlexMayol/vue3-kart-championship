@@ -3,7 +3,7 @@ html, body {
 }
 
 .current-page {
-    @apply bg-indigo-300
+    @apply bg-indigo-300;
 }
 
 .fade-enter-active, .fade-leave-active {
