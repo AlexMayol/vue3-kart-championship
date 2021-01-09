@@ -51,9 +51,6 @@ export const useLeaderboard = () => {
 
     })
 
-    // console.log(race)
-
-    
   }
   return races
 }

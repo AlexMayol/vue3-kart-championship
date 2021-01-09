@@ -1,13 +1,14 @@
-import {usePilotList} from './usePilotList'
 import { Pilot } from '@/interfaces'
 
-import { pilotNameToURL } from "@/helpers";
+import { nameToURL } from "@/helpers";
+
+import {usePilotList} from './usePilotList'
 
 export const useFindPilotByName = (name: string)=>{
     
     const pilots = usePilotList();
 
-    const pilot: Pilot = pilots.find( (p: Pilot) => pilotNameToURL(p.name) === name)!
+    const pilot: Pilot = pilots.find( (p: Pilot) => nameToURL(p.name) === name)!
 
     return pilot
   

@@ -17,7 +17,7 @@ import { defineComponent } from "vue";
 
 import { usePilotList } from "@/hooks";
 
-import { pilotNameToURL } from "@/helpers";
+import { nameToURL } from "@/helpers";
 
 import Card from "@/components/Pilots/Card.vue";
 
@@ -27,7 +27,7 @@ export default defineComponent({
     const pilots = usePilotList();
 
     const getPilotUrl = (name: string) => {
-      return `/pilots/${pilotNameToURL(name)}`;
+      return `/pilots/${nameToURL(name)}`;
     };
 
     return { pilots, getPilotUrl };

@@ -1,6 +1,19 @@
 html, body {
-    height: 100%;
-    @apply text-gray-700;
+    @apply h-full text-gray-700;
+}
+
+.current-page {
+    @apply bg-indigo-300
+}
+
+.fade-enter-active, .fade-leave-active {
+    transition-duration: 0.3s;
+    transition-property: opacity;
+    transition-timing-function: ease;
+}
+
+.fade-enter-from, .fade-leave-active {
+    opacity: 0
 }
 
 /*! @import */

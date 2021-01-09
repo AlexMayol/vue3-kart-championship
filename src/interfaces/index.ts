@@ -5,6 +5,11 @@ export interface Pilot {
     team: string;
     name: string;
 }
+
+export interface Race {
+    raceName: string;   
+    results?: PilotPosition[];
+}
 export interface PilotPosition {
     pilotId: string;
     time: string;

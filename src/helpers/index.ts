@@ -1,6 +1,7 @@
-export const pilotNameToURL = (name: string) => {
+export const nameToURL = (name: string) => {
     return name.trim().toLocaleLowerCase().replace(' ', '-');
 }
+
 
 export const addPositionSufix = (position: number) => {
 

@@ -1,0 +1,12 @@
+<template>
+  <section>
+    <p class="text-3xl font-bold">There's nothing here, lad 😢</p>
+    <router-link to="/">
+      <div
+        class="inline-flex p-4 my-4 text-center text-white bg-blue-500 rounded-lg"
+      >
+        Go back to the home page
+      </div>
+    </router-link>
+  </section>
+</template>

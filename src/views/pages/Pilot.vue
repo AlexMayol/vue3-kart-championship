@@ -1,5 +1,5 @@
 <template>
-  <div v-if="pilot" class="home">
+  <section v-if="pilot" class="home">
     <Card :pilot="pilot" />
 
     <div class="grid grid-cols-2 gap-4 my-4 md:grid-cols-3">
@@ -7,9 +7,18 @@
         <PilotRaceResult :result="race" />
       </div>
     </div>
-  </div>
+  </section>
 
-  <div v-else>Seems this pilot does not exist, pal :(</div>
+  <section v-else>
+    <p>Seems this pilot does not exist, pal :(</p>
+    <router-link to="/pilots">
+      <div
+        class="inline-flex p-4 my-4 text-center text-white bg-blue-500 rounded-lg"
+      >
+        Browse all pilots
+      </div>
+    </router-link>
+  </section>
 </template>
 
 <script lang="ts">
@@ -33,8 +42,6 @@ export default defineComponent({
 
     const pilot: Pilot | undefined = useFindPilotByName(`${route.params.name}`);
 
-    // console.log(pilot);
-
     function createRaceList(leaderboard: Leaderboard[], pilotId: string) {
       const races = [];
       for (const race of leaderboard) {
@@ -49,8 +56,8 @@ export default defineComponent({
       return races;
     }
 
-    const races = createRaceList(leaderboard, pilot._id);
-    console.log(races);
+    let races = null;
+    if (pilot) races = createRaceList(leaderboard, pilot._id);
 
     return { pilot, races };
   },
