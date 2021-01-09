@@ -16,6 +16,7 @@ export const addPositionSufix = (position: number) => {
         
     return 'th';
 }
+
 export const orderRaceTime = (time1: string, time2: string) => {
 
     // compare time stamps like '1:0:56.521' with '1:59:58.061'

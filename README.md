@@ -1,5 +1,9 @@
 # vue3-kart-championship
 
+Let's try out Vue 3 and TypeScript with this little project!
+
+Uses [Tailwind](https://tailwindcss.com/) for styling.
+
 ## Project setup
 ```
 npm install
@@ -19,6 +23,3 @@ npm run build
 ```
 npm run lint
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).

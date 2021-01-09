@@ -17,7 +17,7 @@
   </router-link>
 </template>
 
-<script lang="ts">
+<script>
 import { nameToURL, addPositionSufix } from "@/helpers";
 
 import TrophyIcon from '@/components/UI/Icons/Trophy.vue'
